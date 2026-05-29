@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import rateLimit from "express-rate-limit";
+import rateLimit from "express-rate-limit";ƒ
 import Anthropic from "@anthropic-ai/sdk";
 import dotenv from "dotenv";
 
@@ -88,7 +88,7 @@ app.post("/api/search", async (req, res) => {
 
   try {
     const message = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 2000,
       system: SYSTEM_PROMPT,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
