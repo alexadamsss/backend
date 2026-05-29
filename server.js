@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import rateLimit from "express-rate-limit";ƒ
+import rateLimit from "express-rate-limit";
 import Anthropic from "@anthropic-ai/sdk";
 import dotenv from "dotenv";
 
